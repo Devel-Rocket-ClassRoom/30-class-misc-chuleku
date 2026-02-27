@@ -1,4 +1,41 @@
 using System;
 
-// README.md를 읽고 아래에 코드를 작성하세요.
-Console.WriteLine("코드를 작성하세요.");
+
+
+public class Money
+{
+    public int Gold { get; }
+    public int Silver { get; }
+    public Money(int gold, int silver)
+    {
+        Gold = gold;
+        Silver = silver;
+    }
+
+    public Money Add(int gold,int silver)
+    {
+        return new Money(Gold+gold,Silver+silver);
+    }
+    public Money Subtract(int gold, int silver)
+    {
+        if (Gold < gold)
+        {
+
+        }
+        else if (gold > 0)
+        {
+            return new Money(Gold - gold, Silver);
+        }
+        else if (Silver < silver)
+        {
+            
+        }
+        else if (Silver > 0) {
+            return new Money(Gold, Silver - silver);
+        }
+        else
+        {
+           
+        }
+    }
+}
